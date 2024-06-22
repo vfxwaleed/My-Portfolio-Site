@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Waleed - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Trebuchet MS', sans-serif;
+            background-color: #09011E;
+            color: #FFFFFF;
+            line-height: 1.6;
+            position: relative;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: #E72519;
+            color: #FFFFFF;
+            padding: 10px 0;
+            border-bottom: #FFFFFF 3px solid;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            text-align: right;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 20px;
+            position: relative;
+        }
+
+        nav ul li a {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 5px 10px;
+            transition: color 0.3s ease, background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #FFFFFF;
+            background-color: #09011E;
+            border-radius: 5px;
+        }
+
+        main {
+            padding-top: 100px;
+        }
+
+        section {
+            padding: 20px 0;
+            position: relative;
+        }
+
+        #about p {
+            text-align: center;
+        }
+
+        #skills ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #skills ul li {
+            background: #E72519;
+            color: #FFFFFF;
+            margin: 5px 0;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: opacity 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        #skills ul li i {
+            margin-right: 10px;
+        }
+
+        #skills ul li:hover {
+            opacity: 0.7;
+            transform: scale(1.05);
+            background-color: #09011E;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #E72519;
+            color: #FFFFFF;
+            border-top: #FFFFFF 3px solid;
+            position: relative;
+            margin-top: 100px;
+        }
+
+        footer .social-icons {
+            margin: 20px 0;
+        }
+
+        footer .social-icons a {
+            color: #FFFFFF;
+            margin: 0 10px;
+            font-size: 1.5em;
+            transition: color 0.3s ease;
+        }
+
+        footer .social-icons a:hover {
+            color: #09011E;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2em;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            width: 100px;
+            height: 3px;
+            background: #E72519;
+            display: block;
+            margin: 10px auto 0;
+        }
+
+        p, li {
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        html {
+            scroll-behavior: smooth;
+            transition-timing-function: cubic-bezier(0.75, 0, 0.25, 1);
+            scroll-snap-type: y mandatory;
+        }
+
+        .order-now-button {
+            padding: 10px 20px;
+            background-color: #E72519;
+            color: #FFFFFF;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+            font-family: 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .order-now-button:hover {
+            background-color: #09011E;
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Muhammad Waleed</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>Hi, I'm Muhammad Waleed! As a computer science graduate from Pakistan, I'm passionate about creating amazing digital experiences. With a strong educational background and hands-on experience, I've developed a versatile skill set that includes web development, object-oriented programming, graphic designing, video editing, and project management. Over the years, I've worked on numerous projects, from logos to videos to coding projects, demonstrating my dedication to quality and versatility. My goal is to leverage technology to create impactful solutions that make a real difference in people's lives. I'm always looking for ways to improve and stay up-to-date with the latest industry trends. Let's connect and explore how I can help you with your next project!</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="container">
+                <h2>Skills</h2>
+                <ul>
+                    <li><i class="fas fa-laptop-code"></i> Web Development</li>
+                    <li><i class="fas fa-cogs"></i> Object-Oriented Programming</li>
+                    <li><i class="fas fa-palette"></i> Graphic Designing</li>
+                    <li><i class="fas fa-film"></i> Video Editing</li>
+                    <li><i class="fas fa-tasks"></i> Project Management</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <p>Coming soon...</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Email: <a href="mailto:vfxwaleed@gmail.com" style="color: #E72519; font-weight: bold;">vfxwaleed@gmail.com</a></p>
+                <p>Phone: +92 305 5108866</p>
+                <button class="order-now-button" onclick="window.location.href='mailto:vfxwaleed@gmail.com';">Order Now</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=100074092590243" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/iam_waleed15?igsh=bHJ1dWVqbWdiNDVu" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/muhammad-waleed-861a73311" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p>&copy; 2024 Muhammad Waleed. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeInElements = document.querySelectorAll('p, li');
+
+            fadeInElements.forEach((element, index) => {
+                element.style.animationDelay = `${index * 0.3}s`;
+            });
+        });
+    </script>
+</body>
